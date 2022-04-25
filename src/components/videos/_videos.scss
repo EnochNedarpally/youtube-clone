@@ -1,0 +1,46 @@
+@import '../../base';
+.videos{
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 0.9rem;
+    &__img{
+        position: relative;
+        img{
+            width:100%;
+            object-fit: contain;
+        }
+        span{
+            background: $black-primary;
+            border-radius: 4px;
+            padding: 0.2rem 0.6rem;
+            color:#fff;
+            position: absolute;
+            bottom:4%;
+            right:4%;
+        }
+        
+    }
+    &__title{
+        color: white;
+        margin:0.4rem 0;
+        
+        @include line-clamp(1);
+    }
+    &__info{
+        span{
+            margin-top: 0.2rem;
+            margin-bottom: 0.4rem;
+            margin-left: 0.3rem;
+        }
+    }
+    &__channel{
+        img{
+            width:3rem;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+        }
+        span{
+            font-weight: 400;
+        }
+    }
+}

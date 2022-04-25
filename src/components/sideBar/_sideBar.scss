@@ -1,0 +1,48 @@
+@import '../../base';
+.sidebar{
+    // padding: 0.2rem 0.8rem;
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    top:10vh;
+    left:0;
+    ul{
+        padding:0;
+        list-style: none;
+        .sidebar__items{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:0.4rem 0.6rem;
+            margin:0.7rem 0;
+
+            span{
+                font-size: 0.8rem;
+                // display: none;
+            }
+        }
+        &.open{
+            transform: translateX(0);
+        }
+    }
+}
+@media (max-width:$breakpoint-medium){
+    .sidebar__items{
+        span{
+            display: none;
+        }
+    }
+}
+@media (max-width:$breakpoint-small){
+    .sidebar{
+        padding: 0;
+        z-index: 999;
+    ul{
+           transform: translateX(-100%);
+           position: fixed;
+           background: $black-primary;
+           padding: 0.2rem 0.6rem;
+           height: 100%;
+    }
+}
+}

@@ -1,0 +1,9 @@
+
+    .rowContainer{
+        height:85%;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width:0px;
+        }
+    }
+   

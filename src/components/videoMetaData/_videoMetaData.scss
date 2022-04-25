@@ -1,0 +1,35 @@
+@import "../../base";
+.videometaData {
+  width: 100%;
+  &__channel {
+    border-top: 0.2rem solid $border-color;
+    border-bottom: 0.2rem solid $border-color;
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+      cursor: pointer;
+      margin-right: 0.8rem;
+    }
+
+    button {
+      border: none;
+      background-color: red;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 0.2rem 0.5rem;
+    } 
+  }
+  &__description{
+    font-size: 0.9rem;
+  white-space: pre-line;
+  border-bottom: 0.2px solid $border-color;
+  .showMoreText {
+     text-decoration: none;
+     display: block;
+     margin: 1rem 0;
+     color: #fff;
+     font-weight: 500;
+  }
+}
+}

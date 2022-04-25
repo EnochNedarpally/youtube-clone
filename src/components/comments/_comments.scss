@@ -1,0 +1,31 @@
+@import '../../base';
+.comments{
+    margin-bottom: 0.8rem;
+    &__form{
+        img{
+            width: 3.5rem;
+            height:3.5rem;
+            border-radius: 50%;
+        }
+        input{
+            width:75%;
+            margin-left:0.5rem;
+            border: none;
+            border-bottom: 2px solid $border-color;
+            background: transparent;
+            outline: none;
+            padding: 0.2rem 0.6rem;
+            color: #fff;
+        }
+        button{
+            padding: 0.2rem 0.6rem;
+            background-color: #353946;
+            color: #fff;
+            letter-spacing: 0.5px;
+            &:focus {
+               border: none;
+               outline: none;
+            }
+        }
+    }
+}
